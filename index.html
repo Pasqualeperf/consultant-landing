@@ -9,13 +9,38 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="text-white font-display bg-consultant-purple">
-            DREAMMAKER
-        </h1>
+    <header class="flex items-center py-4 px-2 lg:px-28 justify-between" x-data="{ open: false }" style="background-color: rgba(196, 196, 196, 0.1);;">
+        <div class="flex items-center">
+            <div class="logo bg-consultant-bg w-16 h-16 rounded-full flex items-center justify-center">
+                <span class="font-body font-extrabold text-white drop-shadow-md">DW</span>
+            </div>
+            <span class="ml-3" style="color: #505050;">DREAMMAKER</span>
+        </div>
+        <nav class="hidden flex-row items-center md:flex md:space-x-6 lg:space-x-12">
+            <a class="text-consultant-link hover:underline" href="#">Home</a>
+            <a class="text-consultant-link hover:underline" href="#">About Us</a>
+            <a class="text-consultant-link hover:underline" href="#">Service</a>
+            <a class="text-consultant-link hover:underline" href="#">Setting</a>
+            <button class="cta-header bg-consultant-purple-light text-white px-6 py-1.5 text-xs rounded-md font-semibold md:ml-4 md:px-6 md:py-1.5 md:text-base lg:ml-8 lg:px-12 lg:py-3">
+                Contact Us
+            </button>
+        </nav>
+        <div class="block mr-2 text-xl md:hidden">
+            <i :class="[open ? 'fas fa-times text-consultant-purple-light cursor-pointer' : 'fas fa-bars text-consultant-purple-light cursor-pointer']" @click="open = true"></i>
+        </div>
+        <nav class="mobile absolute left-0 top-24 flex flex-col items-center space-y-3 w-full p-2 md:hidden" x-show="open" @click.away="open = false">
+            <a class="text-consultant-link hover:underline" href="#">Home</a>
+            <a class="text-consultant-link hover:underline" href="#">About Us</a>
+            <a class="text-consultant-link hover:underline" href="#">Service</a>
+            <a class="text-consultant-link hover:underline" href="#">Setting</a>
+            <button class="cta-header bg-consultant-purple-light text-white px-6 py-1.5 text-xs rounded-md font-semibold max-w-min">
+                Contact Us
+            </button>
+        </nav>
     </header>
     <main></main>
     <footer></footer>
+    <script src="https://kit.fontawesome.com/33efdfc09a.js" crossorigin="anonymous"></script>
     <script src="./assets/js/bundle.js"></script>
 </body>
 </html>
