@@ -1,0 +1,26 @@
+{
+  "name": "consultant-landing",
+  "version": "1.0.0",
+  "description": "Consultant landing page project, based in Figma UI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "export NODE_ENV=production && webpack"
+  },
+  "author": "Pasquale Perfetto",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.2.2",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
