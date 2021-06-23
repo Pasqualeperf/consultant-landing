@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#aboveTheFold {
+    background-image: url('https://s3-alpha-sig.figma.com/img/ac7d/4808/b0a05abf6d7cd2beebd8f22e8c9b334f?Expires=1625443200&Signature=SUON0xD5x9Y6grn9g29Tnvh5DaNUlh4s6chqmEV65r91M1WTU1IG9qq4xkncj5qJaKVsKDlmkn6PJEUZqFeyXdn0GTwgIubYp3xvDvewE~UFwciRTQXLyBY2vHXmgNg3QiKk-vl6wqMuv-vkyZyvvbMzxqjrr6~6cWW9yqa9C4x19PyWM3sLgw1rTHX3TTzh~rRapq3-jlLbAOd9sU-FGd9tCSdyOCTnONwupuxemRj5q-oLgm1eS4p8aLhvxDnns7srpo0WP-rkFzNIsCCJpjPm5~KAU2MaKWFsQxW8d50EZDbNVFaF8nlMX0uCnVs8u99XrVmBNtd~Zv3fRvmR8Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    #aboveTheFold {
+        background-image: url('https://images.unsplash.com/photo-1572635148687-307f8ca9b737?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80');
+
+    }
+}
