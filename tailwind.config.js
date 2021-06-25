@@ -10,6 +10,7 @@ module.exports = {
         'consultant-normal-gray': '#9D9D9D',
         'consultant-bg': '#C8C8C8',
         'consultant-link': '#717784',
+        'consultant-special-gray': '#C4C4C4',
       },
       spacing: {
         'hero': '46rem',
