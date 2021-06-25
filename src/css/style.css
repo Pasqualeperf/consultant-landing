@@ -9,6 +9,15 @@
     background-repeat: no-repeat;
 }
 
+.video-js .vjs-big-play-button {
+    border-radius: 100%;
+    line-height: 2.5em;
+    height: 5rem;
+    width: 5rem;
+    background-color: #334B76;
+    border-color: #334B76;
+}
+
 /* media query fino a tablet */
 @media screen and (max-width: 767px) {
     #aboveTheFold {

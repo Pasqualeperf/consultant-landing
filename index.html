@@ -7,6 +7,7 @@
     <title>DREAMMAKER</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
 </head>
 <body>
     <header class="absolute top-0 left-0 w-full flex items-center py-4 px-2 lg:px-60 justify-between" x-data="{ open: false }" style="background-color: rgba(196, 196, 196, 0.1);;">
@@ -55,7 +56,7 @@
                 </button>
             </div>
         </div>
-        <div class="my-14 md:my-20 flex flex-col justify-center items-center">
+        <div class="my-8 md:my-20 flex flex-col justify-center items-center">
             <h3 class="text-consultant-black-green font-body text-2xl font-medium">We provide great Service</h3>
             <p class="text-consultant-black-green my-3 font-body text-center">
                 The occupational traffic permit is one of the most important things in the company <br>
@@ -63,7 +64,7 @@
                 prerequisite for doing business traffic at all.
             </p>
         </div>
-        <div class="my-14 md:my-20 p-7 lg:px-60 grid grid-cols-1 md:grid-cols-4 grid-gap-4 space-y-6 md:space-y-0 items-center justify-between">
+        <div class="icons-cards-section my-8 md:my-20 p-7 lg:px-60 grid grid-cols-1 md:grid-cols-4 grid-gap-4 space-y-6 md:space-y-0 items-center justify-between">
             <div class="card h-full p-5 flex flex-col items-center border border-b-8 border-transparent hover:border-consultant-special-gray rounded">
                 <img src="./assets/images/web-design.png" width="72" height="72" alt="Web design icon">
                 <h3 class="font-body uppercase text-consultant-black-green mt-5">Web design</h3>
@@ -101,9 +102,49 @@
                 </p>
             </div>
         </div>
+        <div class="people-around-section my-8 md:my-20 p-7 lg:px-60 flex flex-col lg:flex-row">
+            <div class="people-around-text lg:max-w-lg">
+                <h3 class="font-body text-consultant-black-green text-2xl">
+                    The People are quick turnaround here
+                </h3>
+                <p class="font-body mt-5 text-consultant-black-green">
+                    The occupational traffic permit is one of the most 
+                    things in the company How do you do when  
+                    a commercial traffic permit for freight 
+                    transport to your business? 
+                </p>
+            </div>
+            <div class="people-around-image">
+                <img class="mt-12 md:mt-0" src="./assets/images/people.png" alt="The People are quick turnaround here" width="100%" height="100%">
+            </div>
+        </div>
+        <div class="only-title-section my-8 md:my-20 p-7 lg:px-60 flex flex-col lg:flex-row">
+            <h3 class="font-display text-5xl" style="color: #402b2b;">
+                First see how to expand <br> or our demo 
+            </h3>
+        </div>
+        <div class="video-section">
+            <video
+            id="my-video"
+            class="video-js vjs-fluid vjs-big-play-centered"
+            controls
+            preload="auto"
+            data-setup="{}"
+          >
+            <source src="./assets/video/consulting-video.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
     </main>
     <footer></footer>
     <script src="https://kit.fontawesome.com/33efdfc09a.js" crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
     <script src="./assets/js/bundle.js"></script>
 </body>
 </html>
