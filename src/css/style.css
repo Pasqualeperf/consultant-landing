@@ -18,11 +18,25 @@
     border-color: #334B76;
 }
 
+.video-js .vjs-play-progress {
+    background-color: #FF0202;
+}
+
+.faq {
+    background-image: url('../../assets/images/bg-faq.png');
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+    background-position: 800px top;
+}
+
+.accordion-text {
+    background-color: #f5f5ff;
+}
+
 /* media query fino a tablet */
 @media screen and (max-width: 767px) {
     #aboveTheFold {
         background-image: url('https://images.unsplash.com/photo-1572635148687-307f8ca9b737?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80');
-
     }
 
     p br {

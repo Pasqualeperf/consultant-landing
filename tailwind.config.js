@@ -12,14 +12,18 @@ module.exports = {
         'consultant-link': '#717784',
         'consultant-special-gray': '#C4C4C4',
       },
+      boxShadow: {
+        'blue': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(191, 191, 236, 0.72)',
+      },
       spacing: {
         'hero': '46rem',
        }
     },
     fontFamily: {
       'display' : 'DM Serif Display',
+      'pt': 'PT Serif',
       'body': 'Poppins',
-     },
+    },
   },
   variants: {
     extend: {},

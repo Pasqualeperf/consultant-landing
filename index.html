@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DREAMMAKER</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
 </head>
 <body>
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="only-title-section my-8 md:my-20 p-7 lg:px-60 flex flex-col lg:flex-row">
-            <h3 class="font-display text-5xl" style="color: #402b2b;">
+            <h3 class="font-pt text-5xl" style="color: #402b2b;">
                 First see how to expand <br> or our demo 
             </h3>
         </div>
@@ -140,6 +140,144 @@
               >
             </p>
           </video>
+        </div>
+        <div class="faq my-8 md:my-20 p-7 lg:px-60 lg:py-48 flex flex-col relative">
+            <div class="flex flex-col md:flex-row">
+                <h3 class="font-pt text-5xl" style="color: #402b2b;">
+                    Your Questions and <br>
+                    Answers is always ready:
+                </h3>
+    
+                <img src="./assets/images/man-faq.png" alt="We answer to your questions" width="500" height="auto">
+            </div>
+            <div class="flex flex-col md:flex-row" x-data="{loaded: 0}">
+                <ul class="w-full -mt-40 md:-mt-80 lg:w-6/12 lg:-mt-96" x-data="{selected: null}">
+                    <li class="my-2">
+                        <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" @click="selected !== 1 ? selected = 1 : selected = null">
+                            <h4 class="font-body">What is a professional traffic permit?</h4><i x-bind:class="selected !== 1 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                        </div>
+                        <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selected === 1"
+                        x-transition:enter="transition duration-200 transform ease-out"
+                        x-transition:enter-start="scale-75"
+                        x-transition:leave="transition duration-100 transform ease-in"
+                        x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            Traffic permits are a requirement for conducting professional traffic.
+                        </p>
+                    </li>
+                    <li class="my-3">
+                        <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" @click="selected !== 2 ? selected = 2 : selected = null">
+                            <h4 class="font-body">How to check the traffic condition?</h4><i x-bind:class="selected !== 2 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                        </div>
+                        <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selected === 2"
+                        x-transition:enter="transition duration-200 transform ease-out"
+                        x-transition:enter-start="scale-75"
+                        x-transition:leave="transition duration-100 transform ease-in"
+                        x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            Traffic permits are a requirement for conducting professional traffic.
+                        </p>
+                    </li>
+                    <li class="my-3">
+                        <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" @click="selected !== 3 ? selected = 3 : selected = null">
+                            <h4 class="font-body">Are there professional traffic permit training courses at a distance?</h4><i x-bind:class="selected !== 3 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                        </div>
+                        <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selected === 3"
+                        x-transition:enter="transition duration-200 transform ease-out"
+                        x-transition:enter-start="scale-75"
+                        x-transition:leave="transition duration-100 transform ease-in"
+                        x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            Traffic permits are a requirement for conducting professional traffic.
+                        </p>
+                    </li>
+                    <li class="my-3">
+                        <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" @click="selected !== 4 ? selected = 4 : selected = null">
+                            <h4 class="font-body">Where to look for a traffic permit?</h4><i x-bind:class="selected !== 4 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                        </div>
+                        <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selected === 4"
+                        x-transition:enter="transition duration-200 transform ease-out"
+                        x-transition:enter-start="scale-75"
+                        x-transition:leave="transition duration-100 transform ease-in"
+                        x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            Traffic permits are a requirement for conducting professional traffic.
+                        </p>
+                    </li>
+                    <li class="my-3">
+                        <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" @click="selected !== 5 ? selected = 5 : selected = null">
+                            <h4 class="font-body">Are there differences between a traffic permit and a professional traffic permit?</h4><i x-bind:class="selected !== 5 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                        </div>
+                        <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selected === 5"
+                        x-transition:enter="transition duration-200 transform ease-out"
+                        x-transition:enter-start="scale-75"
+                        x-transition:leave="transition duration-100 transform ease-in"
+                        x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            Traffic permits are a requirement for conducting professional traffic.
+                        </p>
+                    </li>
+                    <li class="my-3">
+                        <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" @click="selected !== 6 ? selected = 6 : selected = null">
+                            <h4 class="font-body">When is a professional traffic permit needed?</h4><i x-bind:class="selected !== 6 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                        </div>
+                        <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selected === 6"
+                        x-transition:enter="transition duration-200 transform ease-out"
+                        x-transition:enter-start="scale-75"
+                        x-transition:leave="transition duration-100 transform ease-in"
+                        x-transition:leave-end="opacity-0 scale-90"
+                        >
+                            Traffic permits are a requirement for conducting professional traffic.
+                        </p>
+                    </li>
+                </ul>           
+                <div class="w-full lg:w-6/12 -mt-0 md:-mt-12 lg:-mt-24 md:text-center">
+                    <ul class="ml-0 md:ml-3" x-data="{selectLoaded: null}">
+                        <li class="my-3">
+                            <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" x-show="loaded > 0" @click="selectLoaded !== 1 ? selectLoaded = 1 : selectLoaded = null">
+                                <h4 class="font-body">When is a professional traffic permit needed?</h4><i x-bind:class="selectLoaded !== 1 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                            </div>
+                            <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selectLoaded === 1"
+                            x-transition:enter="transition duration-200 transform ease-out"
+                            x-transition:enter-start="scale-75"
+                            x-transition:leave="transition duration-100 transform ease-in"
+                            x-transition:leave-end="opacity-0 scale-90"
+                            >
+                                Traffic permits are a requirement for conducting professional traffic.
+                            </p>
+                        </li>
+                        <li class="my-3">
+                            <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" x-show="loaded > 1" @click="selectLoaded !== 2 ? selectLoaded = 2 : selectLoaded = null">
+                                <h4 class="font-body">Where to look for a traffic permit?</h4><i x-bind:class="selectLoaded !== 2 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                            </div>
+                            <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selectLoaded === 2"
+                            x-transition:enter="transition duration-200 transform ease-out"
+                            x-transition:enter-start="scale-75"
+                            x-transition:leave="transition duration-100 transform ease-in"
+                            x-transition:leave-end="opacity-0 scale-90"
+                            >
+                                Traffic permits are a requirement for conducting professional traffic.
+                            </p>
+                        </li>
+                        <li class="my-3">
+                            <div class="flex items-center cursor-pointer relative px-8 py-6 bg-white rounded-lg shadow-blue" x-show="loaded > 2" @click="selectLoaded !== 3 ? selectLoaded = 3 : selectLoaded = null">
+                                <h4 class="font-body">How to plug in for the traffic permit test?</h4><i x-bind:class="selectLoaded !== 3 ? 'fas fa-angle-right ml-auto text-xs' : 'fas fa-angle-down ml-auto text-xs'"></i>
+                            </div>
+                            <p class="accordion-text rounded-b-lg shadow-blue px-8 pt-6 pb-9 row-auto font-light font-body" x-show="selectLoaded === 3"
+                            x-transition:enter="transition duration-200 transform ease-out"
+                            x-transition:enter-start="scale-75"
+                            x-transition:leave="transition duration-100 transform ease-in"
+                            x-transition:leave-end="opacity-0 scale-90"
+                            >
+                                Traffic permits are a requirement for conducting professional traffic.
+                            </p>
+                        </li>
+                    </ul>
+                    <button class="cta-header bg-consultant-purple-light text-white px-8 py-2.5 text-xs rounded-md font-semibold md:px-6 md:py-1.5 md:text-base lg:px-12 lg:py-3 hover: transition border-2 border-consultant-purple-light hover:bg-transparent hover:text-consultant-link" @click="loaded++">
+                        Load more
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
     <footer></footer>
