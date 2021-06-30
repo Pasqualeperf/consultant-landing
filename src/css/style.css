@@ -33,6 +33,18 @@
     background-color: #f5f5ff;
 }
 
+
+.splide__arrow--prev {
+    display: none;
+}
+
+.reviews-bg {
+    background-image: url('../../assets/images/bg-reviews.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+}
+
 /* media query fino a tablet */
 @media screen and (max-width: 767px) {
     #aboveTheFold {

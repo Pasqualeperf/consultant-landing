@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -142,7 +143,7 @@
             </p>
           </video>
         </div>
-        <div class="faq my-8 md:my-20 p-7 lg:px-60 lg:py-48 flex flex-col relative">
+        <div class="faq my-8 md:my-20 p-7 lg:py-14 lg:px-60 flex flex-col">
             <div class="flex flex-col md:flex-row">
                 <h3 class="font-pt text-5xl" style="color: #402b2b;">
                     Your Questions and <br>
@@ -274,9 +275,108 @@
                             </p>
                         </li>
                     </ul>
-                    <button class="cta-header bg-consultant-purple-light text-white px-8 py-2.5 text-xs rounded-md font-semibold md:px-6 md:py-1.5 md:text-base lg:px-12 lg:py-3 hover: transition border-2 border-consultant-purple-light hover:bg-transparent hover:text-consultant-link" @click="loaded++">
+                    <button class="cta-header bg-consultant-purple-light text-white uppercase px-8 py-2.5 text-xs rounded-md font-semibold md:px-6 md:py-1.5 md:text-base lg:px-24 lg:py-3 hover: transition border-2 border-consultant-purple-light hover:bg-transparent hover:text-consultant-link" @click="loaded++">
                         Load more
                     </button>
+                </div>
+            </div>
+        </div>
+        <div class="my-8 md:my-20 p-7 lg:px-60 flex flex-col">
+            <h2 class="text-consultant-black-green font-body text-2xl text-center mb-3 font-medium">Best Feature in the world </h2>
+            <p class="text-center text-consultant-black-green font-normal">
+                Here you get the best featured in the world and you can do the best thing <br>
+                when carrying out freight transport. In fact, it is a
+            </p>
+        </div>
+        <div class="my-8 md:my-20 p-7 lg:px-60 flex flex-col md:flex-row justify-between">
+            <div class="card lg:max-w-md max-w-xs px-12 py-12 lg:pb-28 text-center border rounded-xl shadow-xl relative">
+                <img src="./assets/images/customer-card.png" alt="Customer" width="339">
+                <h3 class="font-body font-medium text-2xl mt-8">Customer</h3>
+                <p class="font-body font-normal mt-3 text-consultant-black-green">
+                    The occupational traffic permit is one 
+                    things in the company How do you
+                    a commercial traffic permit for freight 
+                    transport to your business? 
+                </p>
+                <button class="lg:absolute left-32 cta-header mt-20 bg-consultant-purple-light text-white px-12 py-3 text-xs rounded-md font-semibold md:px-6 md:py-1.5 md:text-base lg:px-12 lg:py-3 hover: transition border-2 border-consultant-purple-light hover:bg-transparent hover:text-consultant-link">
+                    Refer anyone
+                </button>
+            </div>
+            <div class="card mt-8 md:mt-0 lg:max-w-md max-w-xs px-12 py-12 lg:pb-28 text-center border rounded-xl shadow-xl relative">
+                <img src="./assets/images/provider-card.png" alt="Provider" width="339">
+                <h3 class="font-body font-medium text-2xl mt-8">Provider</h3>
+                <p class="font-body font-normal mt-3 text-consultant-black-green">
+                    The occupational traffic permit is one 
+                    things in the company How do you
+                    a commercial traffic permit for freight 
+                    transport to your business? 
+                </p>
+                <button class="lg:absolute left-32 cta-header mt-20 bg-red-600 text-white px-12 py-3 text-xs rounded-md font-semibold md:px-6 md:py-1.5 md:text-base lg:px-12 lg:py-3 hover: transition border-2 border-red-600 hover:bg-transparent hover:text-red-600">
+                    Learn more
+                </button>
+            </div>
+        </div>
+        <div class="reviews-bg py-8">
+            <div class="reviews my-8 md:my-20 p-7 lg:px-60 flex flex-col items-end">
+                <div class="text-wrap">
+                    <h2 class="text-consultant-black-green font-body text-center text-2xl mb-3 font-medium">Best Feature in the world </h2>
+                    <p class="text-center text-consultant-black-green font-normal">
+                        Here you get the best featured in the world and you can do the best thing <br>
+                        when carrying out freight transport. In fact, it is a
+                    </p>
+                </div>
+                <div class="review-card-carousel w-full md:w-2/4 mt-20 bg-white">
+                    <div id="splide" class="splide rounded-lg shadow-lg">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide p-8 review">
+                                <p class="sentence font-body font-normal text-gray-300 w-9/12">
+                                    
+                                </p>
+                                <div class="flex mt-6">
+                                    <div class="avatar-review">
+                                        <img class="avatar rounded-full w-14" src="" alt="avatar">
+                                    </div>
+                                    <div class="ml-12">
+                                        <h4 class="author-review text-consultant-black-green font-medium"></h4>
+                                        <span class="text-gray-400 font-light text-xs">Overall rating</span>
+                                        <img src="./assets/images/stars.png" alt="rating">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide p-8 review">
+                                <p class="sentence font-body font-normal text-gray-300 w-9/12">
+                                    
+                                </p>
+                                <div class="flex mt-6">
+                                    <div class="avatar-review">
+                                        <img class="avatar rounded-full w-14" src="" alt="avatar">
+                                    </div>
+                                    <div class="ml-12">
+                                        <h4 class="author-review text-consultant-black-green font-medium"></h4>
+                                        <span class="text-gray-400 font-light text-xs">Overall rating</span>
+                                        <img src="./assets/images/stars.png" alt="rating">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide p-8 review">
+                                <p class="sentence font-body font-normal text-gray-300 w-9/12">
+                                    
+                                </p>
+                                <div class="flex mt-6">
+                                    <div class="avatar-review">
+                                        <img class="avatar rounded-full w-14" src="" alt="avatar">
+                                    </div>
+                                    <div class="ml-12">
+                                        <h4 class="author-review text-consultant-black-green font-medium"></h4>
+                                        <span class="text-gray-400 font-light text-xs">Overall rating</span>
+                                        <img src="./assets/images/stars.png" alt="rating">
+                                    </div>
+                                </div>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
