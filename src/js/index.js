@@ -54,7 +54,7 @@ signForm.addEventListener('submit', (e) => {
         nameError.innerText = 'Insert a valid name';
     }
     else if (pwdInput.length < 8) {
-        pwdError.innerText = 'Insert a valid password';
+        pwdError.innerText = 'Insert a valid password, min 8 characters';
     }
     else {
         alert('Registration successfully!');
