@@ -1,6 +1,7 @@
 import '../css/style.css';
 import Alpine from 'alpinejs';
-import Splide  from '@splidejs/splide';
+import 'swiper/swiper-bundle.css';
+import Swiper from 'swiper/bundle';
 import faker from 'faker';
 window.Alpine = Alpine;
 
@@ -8,10 +9,14 @@ Alpine.start();
 
 // Slide reviews with dummy data
 
-new Splide('#splide', {
-	type: 'loop',
-	pagination: false,
-}).mount();
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+    },
+
+});
 
 let sentences = document.querySelectorAll('.review .sentence');
 

@@ -51,6 +51,11 @@ footer {
     background-position: top center;
 }
 
+.swiper-button-next::after {
+    font-size: 2rem !important;
+    color: #626780;
+}
+
 /* media query fino a tablet */
 @media screen and (max-width: 767px) {
     #aboveTheFold {
