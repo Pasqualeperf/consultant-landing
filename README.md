@@ -4,4 +4,4 @@ Consultant Landing Page, based on Figma UI.
 
 ## Technologies
 
-Html, Css (Tailwind), Javascript (Webpack, PostCss)
+Html, Css (Tailwind), Javascript (Webpack, PostCss, Alpine)
