@@ -45,6 +45,12 @@
     background-position: center left;
 }
 
+footer {
+    background-image: url('../../assets/images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
 /* media query fino a tablet */
 @media screen and (max-width: 767px) {
     #aboveTheFold {
@@ -53,6 +59,10 @@
 
     p br {
         display: none;
+    }
+
+    footer {
+        background-color: #9b9bca;
     }
 }
 
