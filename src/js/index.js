@@ -11,7 +11,6 @@ Alpine.start();
 new Splide('#splide', {
 	type: 'loop',
 	pagination: false,
-    clones: 0,
 }).mount();
 
 let sentences = document.querySelectorAll('.review .sentence');
